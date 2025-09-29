@@ -17,16 +17,32 @@ aku mengerjakan perulangan
 
 ### Soal 1
 
-copy paste soal nomor 1 disini
-
 ```go
-package main
+#include <iostream>
+using namespace std;
 
-func main() {
-	fmt.Println("Kode kalian disini")
-	fmt.Println("JANGAN MASUKIN >>SCREENSHOT<< KODE KALIAN DISINI")
-	fmt.Println("KALAU ADA -20 POIN LAPRAK")
+int main() {
+    float x, y;
+
+    cout << "masukan angka pertama (float): ";
+    cin >> x;
+    cout << "masukan angka kedua (float) : ";
+    cin >> y;
+
+    cout << "\n total perhitungan semua nya" << endl;
+    cout << "Tambah       = " << x + y << endl;
+    cout << "Kurang       = " << x - y << endl;
+    cout << "Kali         = " << x * y << endl;
+
+    if (y == 0) {
+        cout << "Bagi         = tidak bisa dibagi nol00" << endl;
+    } else {
+        cout << "Bagi         = " << (x / y) << endl;
+    }
+
+    return 0;
 }
+
 ```
 
 > Output
@@ -37,14 +53,45 @@ Penjelasan ttg kode kalian disini
 
 ### Soal 2
 
-soal nomor 2A
-
 ```go
-package main
+#include <iostream>
+#include <string>
+using namespace std;
 
-func main() {
-	fmt.Println("kode untuk soal nomor 2A")
+string sebutangka(int n) {
+    string angkadasar[] = {"nol", "satu", "dua", "tiga", "empat",
+                           "lima", "enam", "tujuh", "delapan", "sembilan"};
+
+    if (n == 0) return "nol";
+    if (n == 100) return "seratus";
+
+    if (n < 10) {
+        return angkadasar[n];
+    } 
+    else if (n < 20) {
+        if (n == 10) return "sepuluh";
+        if (n == 11) return "sebelas";
+        return angkadasar[n % 10] + " belas";
+    } 
+    else {
+        string hasil = angkadasar[n / 10] + " puluh";
+        if (n % 10 != 0) {
+            hasil += " " + angkadasar[n % 10];
+        }
+        return hasil;
+    }
 }
+
+int main() {
+    int angka;
+    cout << "Masukkan angka bulat positif (0 - 100): ";
+    cin >> angka;
+
+   cout << angka << " : " << sebutangka(angka) << endl;
+
+    return 0;
+}
+
 ```
 
 > Output
@@ -54,14 +101,46 @@ penjelasan kode
 
 Kalau adalanjutan di lanjut disini aja
 
-soal nomor 2B
+### Soal 3
 
 ```go
-package main
+#include <iostream>
+using namespace std;
 
-func main() {
-	fmt.Println("kode untuk soal nomor 2B")
+void Mirror(int n) {
+    for (int baris = n; baris >= 1; baris--) {
+        for (int jarak = 0; jarak < n - baris; jarak++) {
+            cout << "  ";
+        }
+        for (int kiri = baris; kiri >= 1; kiri--) {
+            cout << kiri << " ";
+        }
+        cout << "*";
+        for (int kanan = 1; kanan <= baris; kanan++) {
+            cout << " " << kanan;
+        }
+        cout << endl;
+    }
+
+     if (n >= 1) {
+        for (int jarak = 0; jarak < n; jarak++) {
+            cout << "  ";
+        }
+         cout << "* " << endl;
+    }
 }
+
+int main() {
+    int jumlah;
+    cout << "Masukkan angka: ";
+    cin >> jumlah;
+
+    cout << "\n bentuk pola:\n\n";
+    Mirror(jumlah);
+
+    return 0;
+}
+
 ```
 
 > Output
