@@ -98,7 +98,7 @@ int main() {
 
 penjelasan kode
 
-Kalau adalanjutan di lanjut disini aja
+Program pada soal Unguided 2 terasa lebih menantang dibanding sebelumnya. Di dalam program, saya membuat sebuah fungsi bernama sebutAngka(int n) yang bertugas memproses angka sesuai dengan aturan tertentu. Apabila input bernilai 0, maka fungsi akan mengembalikan kata “nol”, sedangkan jika bernilai 100 hasilnya adalah “seratus”. Untuk angka kurang dari 10, program langsung mengambil kata yang sesuai dari array satuan. Khusus untuk rentang 10–19, digunakan aturan khusus, misalnya 10 menjadi “sepuluh”, 11 menjadi “sebelas”, sementara 12 hingga 19 akan dikonversi menjadi bentuk [satuan] belas. Sementara itu, angka 20 sampai 99 dibentuk dengan menuliskan nilai puluhannya, seperti “dua puluh” atau “tiga puluh”, lalu ditambahkan kata satuan jika angkanya tidak genap puluhan.
 
 ### Soal 3
 
@@ -145,7 +145,9 @@ int main() {
 > Output
 > ![Screenshot bagian x](3.png)
 
-Program pada soal Unguided 2 terasa lebih menantang dibanding sebelumnya. Di dalam program, saya membuat sebuah fungsi bernama sebutAngka(int n) yang bertugas memproses angka sesuai dengan aturan tertentu. Apabila input bernilai 0, maka fungsi akan mengembalikan kata “nol”, sedangkan jika bernilai 100 hasilnya adalah “seratus”. Untuk angka kurang dari 10, program langsung mengambil kata yang sesuai dari array satuan. Khusus untuk rentang 10–19, digunakan aturan khusus, misalnya 10 menjadi “sepuluh”, 11 menjadi “sebelas”, sementara 12 hingga 19 akan dikonversi menjadi bentuk [satuan] belas. Sementara itu, angka 20 sampai 99 dibentuk dengan menuliskan nilai puluhannya, seperti “dua puluh” atau “tiga puluh”, lalu ditambahkan kata satuan jika angkanya tidak genap puluhan.
+Pada soal Unguided 3, tingkat kesulitannya relatif mudah karena saya sudah pernah melakukan praktik serupa sebelumnya, meskipun terdapat sedikit perbedaan pada implementasi. Secara garis besar algoritmanya tidak jauh berbeda, namun dari latihan ini saya mendapatkan pemahaman baru terkait perbedaan penggunaan pre-increment/decrement dan post-increment/decrement. Alur kerjanya bisa dijelaskan sebagai berikut: for loop pertama mengatur jumlah baris yang dicetak dari atas ke bawah, for loop kedua digunakan untuk mencetak spasi agar pola tampak bergeser ke kanan, for loop ketiga menghasilkan deret angka menurun dari nilai tertentu hingga 1, sedangkan for loop keempat mencetak deret angka menaik dari 1 kembali ke nilai semula setelah tanda bintang. Selain itu, terdapat tambahan for loop di dalam blok if yang berfungsi untuk menampilkan spasi terakhir pada baris paling bawah, kemudian mencetak satu bintang sebagai penutup sehingga bentuk cerminnya menjadi utuh.
+
+
 
 ## Referensi
 
