@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul X <br> Nama Modul</h1>
+# <h1 align="center">Laporan Praktikum Modul 1 <br> Nama Modul</h1>
 <p align="center">NAMA - NIM</p>
 
 ## Dasar Teori
