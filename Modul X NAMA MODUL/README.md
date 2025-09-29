@@ -1,9 +1,12 @@
-# <h1 align="center">Laporan Praktikum Modul 1 <br> Nama Modul</h1>
+# <h1 align="center">Laporan Praktikum Modul 1 <br>  CODE BLOCKS IDE &
+PENGENALAN BAHASA C++</h1>
 <p align="center">NAMA - NIM</p>
 
 ## Dasar Teori
 
-yang panjang dikit
+Bahasa pemrograman C++ adalah salah satu bahasa tingkat tinggi yang banyak dimanfaatkan baik di lingkungan pendidikan maupun industri. Pada umumnya, susunan program C++ diawali dengan header file seperti #include, yang berfungsi untuk mendukung proses input dan output standar. Menurut pendapat Indahyati dan Rahmawati (2020), C++ menjadi dasar penting dalam memahami konsep algoritma serta pemrograman, terutama karena struktur sintaksnya relatif sederhana dan mudah dipahami oleh pemula.
+
+
 
 ## Guided
 
